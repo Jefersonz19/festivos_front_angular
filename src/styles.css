@@ -1,0 +1,8 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import '../node_modules/@swimlane/ngx-datatable/themes/material.css';
+@import '../node_modules/@swimlane/ngx-datatable/themes/dark.css';
+@import '../node_modules/@swimlane/ngx-datatable/themes/bootstrap.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

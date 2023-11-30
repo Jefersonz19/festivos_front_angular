@@ -1,0 +1,31 @@
+<mat-toolbar class="mat-primary mat-toolbar-single-row mat-elevatmat-z8 color-barra" color="background">
+    Festivos en Colombia
+</mat-toolbar>
+
+<div>
+   <mat-form-field appearance="fill">
+        <mat-label>Seleccionar Fecha</mat-label>
+        <input matInput [matDatepicker]="Datepicker" [(ngModel)]="Datefestivo">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconPrefix [for]="Datepicker"></mat-datepicker-toggle>
+        <mat-datepicker #Datepicker></mat-datepicker>
+
+    </mat-form-field> 
+    <button mat-stroked-button color="primary" (click)="verificarFestivo()">Validar fecha</button>
+</div>
+<br>
+<div>
+    <mat-form-field appearance="fill">
+        <mat-label>Año</mat-label>
+        <input matInput [(ngModel)]="textoBusqueda">
+    </mat-form-field>
+    <button mat-stroked-button color="primary" (click)="obtener()">Obtener festivos</button>
+</div>
+
+<div>
+    <ngx-datatable class="dark" [headerHeight]="50" [footerHeight]="50" [rowHeight]="20" [rows]="festivo"
+        [columns]="columnas" [columnMode]="modoColumna.force" [limit]="10" [selectionType]="tipoSeleccion.single"
+        (activate)="onActivate($event)" [rowHeight]="'auto'">
+        
+    </ngx-datatable>
+</div>
