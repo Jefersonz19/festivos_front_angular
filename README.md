@@ -1,6 +1,6 @@
 # Festivos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
+This project was build with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7. It is integrated with "festivos" Java Springboot API developed by my own. Once it is running, the frontend page is displayed. It Allows to check holidays on the Colombia Calendar, (whether or not a particular day is off) and to list all holidays throughout a particular year.
 
 ## Development server
 
